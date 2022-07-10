@@ -25,13 +25,11 @@ figure.onclick = function () {
       figure.classList.remove("rounded")
       figure.classList.add("triangle")
       a = 2
-      console.log(a)
       break
     case 2:
       figure.classList.add("square")
       figure.classList.remove("triangle")
       a = 0
-      console.log("square")
       break
     default:
       break
