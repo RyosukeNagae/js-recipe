@@ -1,6 +1,7 @@
-let number = document.getElementById("num").value
+//const inputNum = document.getElementById("input")
+const checkButton = document.getElementById("button1")
 
-const threeEx = function (n) {
+function threeEx(n) {
   for (let count = 1; count <= n; count++) {
     if (count % 3 === 0) {
       console.log(count + "!!!!!!!")
@@ -10,4 +11,10 @@ const threeEx = function (n) {
   }
 }
 
-threeEx(number)
+function displayNums() {
+  const inputNum = document.getElementById("input").value
+  threeEx(inputNum)
+}
+
+//checkbutton.addEventListener("click", threeEx(inputNum))
+checkButton.onclick = displayNums()
