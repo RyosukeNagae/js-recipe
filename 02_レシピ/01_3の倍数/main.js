@@ -17,4 +17,4 @@ function displayNums() {
 }
 
 //checkbutton.addEventListener("click", threeEx(inputNum))
-checkButton.onclick = displayNums()
+checkButton.onclick = displayNums
